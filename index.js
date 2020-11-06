@@ -84,10 +84,10 @@ const initialize = () => {
     .then(r => r.json())
     .then(players => {
       players.forEach(playerObj => {
-        const playerComponent = new PlayerComponent(playerObj)
-        console.log(playerComponent)
-        playerComponent.render(playerContainer)
-        // renderPlayer(playerObj)
+        // const playerComponent = new PlayerComponent(playerObj)
+        // console.log(playerComponent)
+        // playerComponent.render(playerContainer)
+        renderPlayer(playerObj)
       })
     })
 }
